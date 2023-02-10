@@ -1,0 +1,83 @@
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 60%;
+  margin: 10% auto;
+  text-align: center;
+  color: #333;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #337ab7;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.loader {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  margin-top: 50px;
+}
+
+.loader .inner {
+  position: absolute;
+  top: -20px;
+  left: -60px;
+  width: 152px;
+  height: 152px;
+  padding: 00px;
+  border-radius: 43% 58% 62% 43% / 48% 42% 59% 55%;
+  border: 16px solid #337ab7;
+  ##border-top-color: transparent;
+  animation: spin 11s ease-in-out infinite;
+}
+
+.loader .inner.one {
+  animation-delay: 0.0s;
+  animation-direction: alternate-reverse;
+}
+
+.loader .inner.two {
+  animation-delay: 3.0s;
+  animation-direction: alternate;
+}
+
+.loader .inner.three {
+  animation-delay: 5.0s;
+  animation-direction: alternate-reverse;
+}
+
+.loader .inner.four {
+  animation-delay: 7.0s;
+  animation-direction: alternate;
+}
+
+@keyframes spin {
+  0%   {border-radius: 43% 58% 62% 43% / 48% 42% 59% 55%;}
+  50%  {border-radius: 62% 58% 63% 49% / 48% 52% 61% 72%; }
+  100%  {border-radius: 43% 58% 62% 43% / 48% 42% 59% 55%; transform: rotate(360deg);}
+}
+
+@keyframes spinrev {
+  0%   {border-radius: 43% 58% 62% 43% / 48% 42% 59% 55%;}
+  50%  {border-radius: 62% 58% 63% 49% / 48% 52% 61% 72%; }
+  100%  {border-radius: 43% 58% 62% 43% / 48% 42% 59% 55%; transform: rotate(-360deg);}
+}
+
+@keyframes trtrtr {
+  0%   {border-radius: 50% 50% 50% 50%;}
+  25%  {border-radius: 40% 45% 40% 45%; width: 110%;}
+  50%  {border-radius: 30% 35% 35% 35%; width: 120%;}
+  75%  {border-radius: 40% 45% 45% 40%; width: 110%;}
+  100% {border-radius: 50% 50% 50% 50%; transform: rotate(360deg); width: 100%;}
+}

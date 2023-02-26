@@ -48,17 +48,17 @@ p {
 }
 
 .loader .inner.two {
-  animation-delay: 3.0s;
+  animation-delay: 1.0s;
   animation-direction: alternate;
 }
 
 .loader .inner.three {
-  animation-delay: 5.0s;
+  animation-delay: 1.0s;
   animation-direction: alternate-reverse;
 }
 
 .loader .inner.four {
-  animation-delay: 7.0s;
+  animation-delay: 3.0s;
   animation-direction: alternate;
 }
 
